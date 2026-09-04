@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#0a0a0a" />
+<title>Forró Sequencer</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="/src/styles.css" />
+</head>
+<body>
+
+<div class="header">
+  <h1>Forró Sequencer</h1>
+  <div class="header-right">
+    <a class="tutorial-btn" href="tutorial.html">TUTORIAL</a>
+    <a class="tutorial-btn" href="about.html">ABOUT</a>
+    <div class="lang-selector" id="langSelector"></div>
+    <button class="theme-btn" id="themeBtn">DARK</button>
+    <div class="version">v0.1.0</div>
+  </div>
+</div>
+
+<div class="tempo">
+  <div class="bpm" id="bpmValue">100</div>
+  <div class="bpm-label">BPM</div>
+</div>
+
+<div class="controls">
+  <button class="ctrl" id="minusBtn">−</button>
+  <input type="range" min="40" max="220" value="100" id="bpmSlider" />
+  <button class="ctrl" id="plusBtn">+</button>
+</div>
+
+<div class="transport">
+  <button id="playBtn">Play</button>
+  <button id="clearBtn">Clear</button>
+  <button id="tapBtn">Tap</button>
+</div>
+<div class="section-hint" id="transportHint"></div>
+
+<div class="inst-selector">
+  <div class="presets-label" data-i18n="section.instrument">Instrumento</div>
+  <div class="section-hint" id="instrumentHint"></div>
+  <div class="inst-grid" id="instGrid"></div>
+</div>
+
+<div class="presets">
+  <div class="presets-label" data-i18n="section.rhythms">Ritmos</div>
+  <div class="section-hint" id="rhythmsHint"></div>
+  <div class="preset-grid" id="presetGrid"></div>
+</div>
+
+<div class="bar-controls">
+  <button id="addBarBtn">+ Compasso</button>
+  <button id="removeBarBtn">− Compasso</button>
+  <button id="gridBtn">12+12</button>
+</div>
+<div class="section-hint" id="barsHint"></div>
+
+<div id="sequencer"></div>
+
+<div id="legend"></div>
+
+<div class="io-controls">
+  <button id="saveBtn">Salvar</button>
+  <button id="loadBtn">Carregar</button>
+</div>
+<div class="section-hint io-hint" id="ioHint"></div>
+
+<div class="footer">
+  forró sequencer · para músicos de forró
+</div>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>

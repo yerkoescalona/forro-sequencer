@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#0a0a0a" />
+<title>About — Forró Sequencer</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/src/styles.css" />
+</head>
+<body class="subpage">
+
+<div class="header">
+  <h1><a href="./" style="color: inherit; text-decoration: none;">Forró Sequencer</a></h1>
+  <div class="header-right">
+    <a class="nav-link" href="./" data-i18n="nav.sequencer">← SEQUENCER</a>
+    <a class="nav-link" href="tutorial.html" data-i18n="nav.tutorial">TUTORIAL</a>
+    <div class="lang-selector" id="langSelector"></div>
+    <button class="theme-btn" id="themeBtn">DARK</button>
+  </div>
+</div>
+
+<div class="page-title" data-i18n="about.title">About</div>
+<p class="page-subtitle" data-i18n="about.subtitle">A drum sequencer for forró rhythms — built for musicians, students, and anyone curious about the music of northeastern Brazil.</p>
+
+<div class="section-title" data-i18n="about.me.title">About me</div>
+
+<div class="block">
+  <p data-i18n-html="about.me.p1">I'm <strong>Yerko Escalona</strong>, originally from Chile, currently based in <strong>Vienna, Austria</strong>. I got into forró through dancing about four years ago and quickly fell in love with the music. That love led me to pick up the zabumba, and today I play it in <strong>Beira Mar</strong> (<a href="https://instagram.com/beira.mar.forro" target="_blank" rel="noopener">@beira.mar.forro</a>), a forró band here in Vienna.</p>
+  <p data-i18n="about.me.p2">I built this sequencer because I wanted a tool to study and visualize the percussion patterns that drive forró — something I could use to practice, teach, and share rhythms with other musicians and dancers. As a software developer, building it myself felt like the natural thing to do.</p>
+  <p data-i18n-html="about.me.p3">You can find me on Instagram at <a href="https://instagram.com/yerkoescalona" target="_blank" rel="noopener">@yerkoescalona</a>.</p>
+</div>
+
+<div class="section-title" data-i18n="about.forro.title">What is forró?</div>
+
+<div class="block">
+  <p data-i18n-html="about.forro.p1"><strong>Forró</strong> is a family of music genres and partner dances from the northeast of Brazil.</p>
+  <p data-i18n-html="about.forro.p2">At its core, forró is powered by a trio of percussion instruments: the <strong>zabumba</strong>, the <strong>pandeiro</strong>, and the <strong>triângulo</strong>.</p>
+  <p data-i18n-html="about.forro.p3">The genre was popularized by <strong>Luiz Gonzaga</strong> (1912–1989), the "King of Baião."</p>
+</div>
+
+<div class="section-title" data-i18n="about.instruments.title">The instruments</div>
+
+<div class="instrument-list">
+  <div class="instrument-card">
+    <h3>Zabumba</h3>
+    <p data-i18n-html="about.inst.zabumba">A large double-headed bass drum played with a mallet (<em>maceta</em>) on one side and a thin stick (<em>bacalhau</em>) on the other.</p>
+  </div>
+  <div class="instrument-card">
+    <h3>Pandeiro</h3>
+    <p data-i18n-html="about.inst.pandeiro">A frame drum with jingles, similar to a tambourine but played with sophisticated technique.</p>
+  </div>
+  <div class="instrument-card">
+    <h3>Triângulo</h3>
+    <p data-i18n-html="about.inst.triangle">The triangle in forró is not the simple timekeeper of orchestral music — it plays a driving, syncopated pattern.</p>
+  </div>
+</div>
+
+<div class="section-title" data-i18n="about.sequencer.title">What this sequencer does</div>
+
+<div class="block">
+  <p data-i18n-html="about.sequencer.text">The Forró Sequencer lets you <strong>build, hear, and tweak</strong> traditional forró percussion patterns step by step. It is designed for:</p>
+  <ul>
+    <li data-i18n-html="about.sequencer.musicians"><strong>Forró musicians</strong> — practice rhythms, experiment with variations.</li>
+    <li data-i18n-html="about.sequencer.dancers"><strong>Dance students</strong> — hear isolated instruments to understand the musical structure.</li>
+    <li data-i18n-html="about.sequencer.teachers"><strong>Music teachers</strong> — demonstrate rhythm patterns visually and audibly.</li>
+    <li data-i18n-html="about.sequencer.curious"><strong>Curious people</strong> — explore the percussion of northeastern Brazil interactively.</li>
+  </ul>
+</div>
+
+<div class="highlight-box">
+  <p data-i18n-html="about.sequencer.highlight">All sounds are synthesized in real-time using the <strong>Web Audio API</strong> — no samples to load, no downloads. The sequencer works entirely in your browser.</p>
+</div>
+
+<div class="section-title" data-i18n="about.tech.title">Built with</div>
+
+<ul class="tech-list">
+  <li data-i18n-html="about.tech.js"><strong>Vanilla JavaScript</strong> — ES modules, no frameworks</li>
+  <li data-i18n-html="about.tech.audio"><strong>Web Audio API</strong> — sample-accurate scheduling and real-time synthesis</li>
+  <li data-i18n-html="about.tech.vite"><strong>Vite</strong> — development server and production builds</li>
+  <li data-i18n-html="about.tech.vitest"><strong>Vitest</strong> — unit testing</li>
+  <li data-i18n-html="about.tech.ghpages"><strong>GitHub Pages</strong> — hosting</li>
+</ul>
+
+<div class="section-title" data-i18n="about.roadmap.title">Roadmap</div>
+
+<ul class="roadmap-list">
+  <li data-i18n="about.roadmap.swing">Swing parameter for arrasta-pé feel</li>
+  <li data-i18n="about.roadmap.save">Save/load patterns to localStorage</li>
+  <li data-i18n="about.roadmap.share">Export pattern as shareable URL</li>
+  <li data-i18n="about.roadmap.samples">Replace synth sounds with real zabumba recordings</li>
+  <li data-i18n="about.roadmap.pwa">PWA support for install-to-homescreen</li>
+</ul>
+
+<div class="section-title" data-i18n="about.opensource.title">Open source</div>
+
+<div class="block">
+  <p data-i18n-html="about.opensource.license">This project is open source under the <strong>GPL-3.0</strong> license. Contributions and feedback are welcome.</p>
+  <p data-i18n-html="about.opensource.source">Source code: <a href="https://github.com/yescalona/forro-sequencer" target="_blank" rel="noopener">github.com/yescalona/forro-sequencer</a></p>
+</div>
+
+<div class="footer">
+  <span data-i18n="footer.text">forró sequencer</span> · <a href="./" data-i18n="footer.back">back to sequencer</a> · <a href="tutorial.html" data-i18n="nav.tutorial">tutorial</a>
+</div>
+
+<script type="module">
+  import { initSubpageI18n } from '/src/subpage-i18n.js';
+
+  // Theme toggle
+  const KEY = 'forro-seq-theme';
+  const btn = document.getElementById('themeBtn');
+  const saved = localStorage.getItem(KEY);
+  if (saved === 'light') {
+    document.documentElement.setAttribute('data-theme', 'light');
+    btn.textContent = 'LIGHT';
+  }
+  btn.addEventListener('click', () => {
+    const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+    document.documentElement.setAttribute('data-theme', isLight ? 'dark' : 'light');
+    localStorage.setItem(KEY, isLight ? 'dark' : 'light');
+    initSubpageI18n();
+  });
+
+  initSubpageI18n();
+</script>
+</body>
+</html>

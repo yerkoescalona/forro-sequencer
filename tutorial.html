@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#0a0a0a" />
+<title>Tutorial — Forró Sequencer</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/src/styles.css" />
+</head>
+<body class="subpage">
+
+<div class="header">
+  <h1><a href="./" style="color: inherit; text-decoration: none;">Forró Sequencer</a></h1>
+  <div class="header-right">
+    <a class="nav-link" href="./" data-i18n="nav.sequencer">← SEQUENCER</a>
+    <a class="nav-link" href="about.html" data-i18n="nav.about">ABOUT</a>
+    <div class="lang-selector" id="langSelector"></div>
+    <button class="theme-btn" id="themeBtn">DARK</button>
+  </div>
+</div>
+
+<div class="page-title" data-i18n="tutorial.title">Tutorial</div>
+<p class="page-subtitle" data-i18n="tutorial.subtitle">Learn how to use the Forró Sequencer in five steps. No music theory required — just click and play.</p>
+
+<div class="step">
+  <div class="step-number">01</div>
+  <h2 data-i18n="tutorial.step1.title">Pick an instrument</h2>
+  <p data-i18n="tutorial.step1.text">Choose one of the three traditional forró percussion instruments:</p>
+  <div class="diagram">
+    <svg viewBox="0 0 600 70" xmlns="http://www.w3.org/2000/svg">
+      <rect width="600" height="70" fill="#0a0a0a"/>
+      <rect x="20" y="15" width="130" height="40" rx="0" fill="none" stroke="#d4ff00" stroke-width="2"/>
+      <text x="85" y="40" text-anchor="middle" fill="#0a0a0a" font-family="Space Mono, monospace" font-size="11" font-weight="700"><tspan>ZABUMBA</tspan></text>
+      <rect x="20" y="15" width="130" height="40" fill="#d4ff00" opacity="0.95"/>
+      <text x="85" y="40" text-anchor="middle" fill="#0a0a0a" font-family="Space Mono, monospace" font-size="11" letter-spacing="0.08em">ZABUMBA</text>
+      <rect x="160" y="15" width="130" height="40" fill="none" stroke="#222" stroke-width="1"/>
+      <text x="225" y="40" text-anchor="middle" fill="#f5f5f0" font-family="Space Mono, monospace" font-size="11" letter-spacing="0.08em">PANDEIRO</text>
+      <rect x="300" y="15" width="130" height="40" fill="none" stroke="#222" stroke-width="1"/>
+      <text x="365" y="40" text-anchor="middle" fill="#f5f5f0" font-family="Space Mono, monospace" font-size="11" letter-spacing="0.08em">TRIÂNGULO</text>
+      <rect x="440" y="15" width="140" height="40" fill="none" stroke="#222" stroke-width="1"/>
+      <text x="510" y="40" text-anchor="middle" fill="#f5f5f0" font-family="Space Mono, monospace" font-size="11" letter-spacing="0.08em">TODOS</text>
+      <line x1="85" y1="60" x2="85" y2="67" stroke="#d4ff00" stroke-width="1.5"/>
+      <text x="85" y="69" text-anchor="middle" fill="#d4ff00" font-family="Space Grotesk, sans-serif" font-size="7">ACTIVE</text>
+    </svg>
+  </div>
+  <ul>
+    <li data-i18n="tutorial.step1.zabumba">Zabumba — the bass drum that drives the rhythm. Two tracks: maceta (mallet, open/closed) and bacalhau (stick, normal/accent).</li>
+    <li data-i18n="tutorial.step1.pandeiro">Pandeiro — the frame drum. One track with five sounds: off, xi, tum (open), tũ (closed), and tapa (slap).</li>
+    <li data-i18n="tutorial.step1.triangle">Triângulo — the triangle. Two sounds: closed (muted) and open (ringing).</li>
+  </ul>
+  <p style="margin-top: 10px;" data-i18n="tutorial.step1.ensemble">Select TODOS / ENSEMBLE to hear all three instruments playing together.</p>
+</div>
+
+<div class="step">
+  <div class="step-number">02</div>
+  <h2 data-i18n="tutorial.step2.title">Choose a rhythm</h2>
+  <p data-i18n="tutorial.step2.text">Click one of the preset buttons to load a traditional pattern into the grid. The sequencer starts with Baião loaded by default.</p>
+  <div class="diagram">
+    <svg viewBox="0 0 600 120" xmlns="http://www.w3.org/2000/svg">
+      <rect width="600" height="120" fill="#0a0a0a"/>
+      <rect x="20" y="15" width="180" height="40" fill="#d4ff00"/>
+      <text x="110" y="40" text-anchor="middle" fill="#0a0a0a" font-family="Space Mono, monospace" font-size="11" letter-spacing="0.08em">BAIÃO</text>
+      <rect x="210" y="15" width="180" height="40" fill="none" stroke="#222" stroke-width="1"/>
+      <text x="300" y="40" text-anchor="middle" fill="#f5f5f0" font-family="Space Mono, monospace" font-size="11" letter-spacing="0.08em">XOTE</text>
+      <rect x="400" y="15" width="180" height="40" fill="none" stroke="#222" stroke-width="1"/>
+      <text x="490" y="40" text-anchor="middle" fill="#f5f5f0" font-family="Space Mono, monospace" font-size="11" letter-spacing="0.08em">FORRÓ</text>
+      <rect x="20" y="65" width="180" height="40" fill="none" stroke="#222" stroke-width="1"/>
+      <text x="110" y="90" text-anchor="middle" fill="#f5f5f0" font-family="Space Mono, monospace" font-size="11" letter-spacing="0.08em">XAXADO</text>
+      <rect x="210" y="65" width="180" height="40" fill="none" stroke="#222" stroke-width="1"/>
+      <text x="300" y="90" text-anchor="middle" fill="#f5f5f0" font-family="Space Mono, monospace" font-size="11" letter-spacing="0.08em">COCO</text>
+      <rect x="400" y="65" width="180" height="40" fill="none" stroke="#222" stroke-width="1"/>
+      <text x="490" y="90" text-anchor="middle" fill="#f5f5f0" font-family="Space Mono, monospace" font-size="11" letter-spacing="0.08em">RASTAPÉ</text>
+    </svg>
+  </div>
+  <p style="margin-top: 8px;" data-i18n="tutorial.step2.rhythms">Available rhythms: Baião, Xote, Forró, Xaxado, Coco, and Rastapé. Each preset also sets the tempo to its traditional BPM.</p>
+  <div class="tip">
+    <p data-i18n="tutorial.step2.tip">All rhythm names are Portuguese — they refer to specific dance and music styles from northeastern Brazil. They are not translated.</p>
+  </div>
+</div>
+
+<div class="step">
+  <div class="step-number">03</div>
+  <h2 data-i18n="tutorial.step3.title">Press Play</h2>
+  <p data-i18n="tutorial.step3.text">Hit the TOCAR / PLAY button to start the rhythm. You'll see the step indicator moving across the grid and hear the pattern.</p>
+  <div class="diagram">
+    <svg viewBox="0 0 600 130" xmlns="http://www.w3.org/2000/svg">
+      <rect width="600" height="130" fill="#0a0a0a"/>
+      <text x="300" y="38" text-anchor="middle" fill="#f5f5f0" font-family="Space Grotesk, sans-serif" font-size="42" font-weight="300">92</text>
+      <text x="300" y="52" text-anchor="middle" fill="#666" font-family="Space Mono, monospace" font-size="9" letter-spacing="0.2em">BPM</text>
+      <rect x="20" y="70" width="180" height="44" fill="#d4ff00"/>
+      <text x="110" y="97" text-anchor="middle" fill="#0a0a0a" font-family="Space Mono, monospace" font-size="11" letter-spacing="0.08em">TOCAR</text>
+      <rect x="210" y="70" width="180" height="44" fill="none" stroke="#222" stroke-width="1"/>
+      <text x="300" y="97" text-anchor="middle" fill="#f5f5f0" font-family="Space Mono, monospace" font-size="11" letter-spacing="0.08em">LIMPAR</text>
+      <rect x="400" y="70" width="180" height="44" fill="none" stroke="#222" stroke-width="1"/>
+      <text x="490" y="97" text-anchor="middle" fill="#f5f5f0" font-family="Space Mono, monospace" font-size="11" letter-spacing="0.08em">MARCAR TEMPO</text>
+      <line x1="80" y1="60" x2="520" y2="60" stroke="#222" stroke-width="2"/>
+      <rect x="175" y="53" width="14" height="14" fill="#d4ff00"/>
+    </svg>
+  </div>
+  <ul>
+    <li data-i18n="tutorial.step3.stop">PARAR / STOP — stops playback</li>
+    <li data-i18n="tutorial.step3.clear">LIMPAR / CLEAR — erases the current pattern</li>
+    <li data-i18n="tutorial.step3.tap">TAP TEMPO — tap the button repeatedly to set the BPM by feel</li>
+  </ul>
+  <p style="margin-top: 8px;" data-i18n="tutorial.step3.slider">You can also adjust BPM precisely with the slider or the +/− buttons.</p>
+</div>
+
+<div class="step">
+  <div class="step-number">04</div>
+  <h2 data-i18n="tutorial.step4.title">Edit the pattern</h2>
+  <p data-i18n="tutorial.step4.text">Click any cell in the grid to cycle through the available sounds for that track. Each click advances to the next state:</p>
+  <div class="diagram">
+    <svg viewBox="0 0 600 160" xmlns="http://www.w3.org/2000/svg">
+      <rect width="600" height="160" fill="#0a0a0a"/>
+      <text x="130" y="18" text-anchor="middle" fill="#f5f5f0" font-family="Space Mono, monospace" font-size="9" font-weight="500">1</text>
+      <text x="185" y="18" text-anchor="middle" fill="#666" font-family="Space Mono, monospace" font-size="9">&amp;</text>
+      <text x="240" y="18" text-anchor="middle" fill="#f5f5f0" font-family="Space Mono, monospace" font-size="9" font-weight="500">2</text>
+      <text x="295" y="18" text-anchor="middle" fill="#666" font-family="Space Mono, monospace" font-size="9">&amp;</text>
+      <text x="365" y="18" text-anchor="middle" fill="#f5f5f0" font-family="Space Mono, monospace" font-size="9" font-weight="500">3</text>
+      <text x="420" y="18" text-anchor="middle" fill="#666" font-family="Space Mono, monospace" font-size="9">&amp;</text>
+      <text x="475" y="18" text-anchor="middle" fill="#f5f5f0" font-family="Space Mono, monospace" font-size="9" font-weight="500">4</text>
+      <text x="530" y="18" text-anchor="middle" fill="#666" font-family="Space Mono, monospace" font-size="9">&amp;</text>
+      <text x="15" y="48" fill="#666" font-family="Space Mono, monospace" font-size="10">maceta</text>
+      <text x="15" y="93" fill="#666" font-family="Space Mono, monospace" font-size="10">bacalhau</text>
+      <rect x="108" y="28" width="44" height="34" fill="#ff8a3d" stroke="#ff8a3d" stroke-width="1"/>
+      <rect x="163" y="28" width="44" height="34" fill="none" stroke="#222" stroke-width="1"/>
+      <rect x="218" y="28" width="44" height="34" fill="none" stroke="#222" stroke-width="1"/>
+      <rect x="273" y="28" width="44" height="34" fill="#8a4a1f" stroke="#8a4a1f" stroke-width="1"/>
+      <rect x="343" y="28" width="44" height="34" fill="none" stroke="#222" stroke-width="1"/>
+      <rect x="398" y="28" width="44" height="34" fill="none" stroke="#222" stroke-width="1"/>
+      <rect x="453" y="28" width="44" height="34" fill="none" stroke="#222" stroke-width="1"/>
+      <rect x="508" y="28" width="44" height="34" fill="none" stroke="#222" stroke-width="1"/>
+      <rect x="108" y="73" width="44" height="34" fill="none" stroke="#222" stroke-width="1"/>
+      <rect x="163" y="73" width="44" height="34" fill="none" stroke="#222" stroke-width="1"/>
+      <rect x="218" y="73" width="44" height="34" fill="#e8e8e0" stroke="#e8e8e0" stroke-width="1"/>
+      <rect x="273" y="73" width="44" height="34" fill="none" stroke="#222" stroke-width="1"/>
+      <rect x="343" y="73" width="44" height="34" fill="#e8e8e0" stroke="#e8e8e0" stroke-width="1"/>
+      <rect x="398" y="73" width="44" height="34" fill="none" stroke="#222" stroke-width="1"/>
+      <rect x="453" y="73" width="44" height="34" fill="#e8e8e0" stroke="#e8e8e0" stroke-width="1"/>
+      <rect x="508" y="73" width="44" height="34" fill="none" stroke="#222" stroke-width="1"/>
+      <rect x="108" y="28" width="44" height="34" fill="none" stroke="#d4ff00" stroke-width="2"/>
+      <rect x="108" y="73" width="44" height="34" fill="none" stroke="#d4ff00" stroke-width="2"/>
+      <rect x="108" y="125" width="14" height="14" fill="#ff8a3d"/>
+      <text x="128" y="136" fill="#f5f5f0" font-family="Space Mono, monospace" font-size="8">open</text>
+      <rect x="178" y="125" width="14" height="14" fill="#8a4a1f"/>
+      <text x="198" y="136" fill="#f5f5f0" font-family="Space Mono, monospace" font-size="8">closed</text>
+      <rect x="258" y="125" width="14" height="14" fill="#e8e8e0"/>
+      <text x="278" y="136" fill="#f5f5f0" font-family="Space Mono, monospace" font-size="8">normal</text>
+      <rect x="338" y="125" width="14" height="14" fill="#d4ff00"/>
+      <text x="358" y="136" fill="#f5f5f0" font-family="Space Mono, monospace" font-size="8">accent</text>
+      <rect x="418" y="125" width="14" height="14" fill="none" stroke="#222" stroke-width="1"/>
+      <text x="438" y="136" fill="#666" font-family="Space Mono, monospace" font-size="8">off</text>
+      <text x="300" y="155" text-anchor="middle" fill="#666" font-family="Space Grotesk, sans-serif" font-size="9">click a cell to cycle through sounds</text>
+    </svg>
+  </div>
+  <ul>
+    <li data-i18n="tutorial.step4.maceta">Zabumba maceta: off → open → closed → off</li>
+    <li data-i18n="tutorial.step4.bacalhau">Zabumba bacalhau: off → normal → accent → off</li>
+    <li data-i18n="tutorial.step4.pandeiro">Pandeiro: off → xi → tum → tũ → tapa → off</li>
+    <li data-i18n="tutorial.step4.triangle">Triângulo: off → closed → open → off</li>
+  </ul>
+  <p style="margin-top: 8px;" data-i18n="tutorial.step4.legend">The legend below the grid shows the color coding for each sound.</p>
+  <div class="tip">
+    <p data-i18n="tutorial.step4.tip">Editing a cell clears the active preset highlight — your pattern is now custom. Load a preset again to reset.</p>
+  </div>
+</div>
+
+<div class="step">
+  <div class="step-number">05</div>
+  <h2 data-i18n="tutorial.step5.title">Add bars &amp; change resolution</h2>
+  <p data-i18n="tutorial.step5.text">Use + COMPASSO / + BAR to add bars for longer patterns. Remove with − COMPASSO / − BAR.</p>
+  <div class="diagram">
+    <svg viewBox="0 0 600 55" xmlns="http://www.w3.org/2000/svg">
+      <rect width="600" height="55" fill="#0a0a0a"/>
+      <rect x="20" y="10" width="170" height="35" fill="none" stroke="#222" stroke-width="1"/>
+      <text x="105" y="33" text-anchor="middle" fill="#f5f5f0" font-family="Space Mono, monospace" font-size="11" letter-spacing="0.06em">+ COMPASSO</text>
+      <rect x="200" y="10" width="170" height="35" fill="none" stroke="#222" stroke-width="1"/>
+      <text x="285" y="33" text-anchor="middle" fill="#f5f5f0" font-family="Space Mono, monospace" font-size="11" letter-spacing="0.06em">− COMPASSO</text>
+      <rect x="380" y="10" width="100" height="35" fill="none" stroke="#222" stroke-width="1"/>
+      <text x="430" y="33" text-anchor="middle" fill="#f5f5f0" font-family="Space Mono, monospace" font-size="11" letter-spacing="0.06em">12+12</text>
+    </svg>
+  </div>
+  <p style="margin-top: 8px;" data-i18n="tutorial.step5.resolution">Toggle grid resolution:</p>
+  <ul>
+    <li data-i18n="tutorial.step5.binary">4+4 — 8 steps per bar (eighth notes). The default, good for most patterns.</li>
+    <li data-i18n="tutorial.step5.triplet">12+12 — 24 steps per bar (triplet subdivisions). Higher resolution for advanced patterns and swing feels.</li>
+  </ul>
+</div>
+
+<div class="section-title" data-i18n="tutorial.rhythms.title">The rhythms of forró</div>
+
+<div class="rhythm-card">
+  <h3>Baião</h3>
+  <div class="bpm">~92 BPM</div>
+  <p data-i18n="tutorial.rhythm.baiao">The foundational rhythm of forró, created by Luiz Gonzaga and Humberto Teixeira in the 1940s.</p>
+</div>
+
+<div class="rhythm-card">
+  <h3>Xote</h3>
+  <div class="bpm">~76 BPM</div>
+  <p data-i18n="tutorial.rhythm.xote">The slowest forró rhythm, derived from the European schottische.</p>
+</div>
+
+<div class="rhythm-card">
+  <h3>Forró</h3>
+  <div class="bpm">~100 BPM</div>
+  <p data-i18n="tutorial.rhythm.forro">The genre's namesake rhythm. Faster than baião with a busier bacalhau pattern.</p>
+</div>
+
+<div class="rhythm-card">
+  <h3>Xaxado</h3>
+  <div class="bpm">~110 BPM</div>
+  <p data-i18n="tutorial.rhythm.xaxado">Originally a war dance of the cangaceiros (bandits) of northeastern Brazil.</p>
+</div>
+
+<div class="rhythm-card">
+  <h3>Coco</h3>
+  <div class="bpm">~120 BPM</div>
+  <p data-i18n="tutorial.rhythm.coco">A circle-dance rhythm from the coast of northeastern Brazil.</p>
+</div>
+
+<div class="rhythm-card">
+  <h3>Rastapé</h3>
+  <div class="bpm">~140 BPM</div>
+  <p data-i18n="tutorial.rhythm.rastape">The fastest forró style — high-energy and exhilarating.</p>
+</div>
+
+<div class="section-title" data-i18n="tutorial.tips.title">Tips</div>
+
+<div class="step" style="border-color: var(--accent);">
+  <h2 data-i18n="tutorial.tips.quickstart.title">Quick-start recipe</h2>
+  <p data-i18n="tutorial.tips.quickstart.text">Select ENSEMBLE → pick BAIÃO → press PLAY. You'll hear the full trio instantly.</p>
+</div>
+
+<div class="step">
+  <h2 data-i18n="tutorial.tips.lang.title">Language &amp; theme</h2>
+  <p data-i18n="tutorial.tips.lang.text">The sequencer is available in Portuguese and English.</p>
+</div>
+
+<div class="footer">
+  <span data-i18n="footer.text">forró sequencer</span> · <a href="./" data-i18n="footer.back">back to sequencer</a> · <a href="about.html" data-i18n="nav.about">about</a>
+</div>
+
+<script type="module">
+  import { initSubpageI18n } from '/src/subpage-i18n.js';
+
+  // Theme toggle
+  const KEY = 'forro-seq-theme';
+  const btn = document.getElementById('themeBtn');
+  const saved = localStorage.getItem(KEY);
+  if (saved === 'light') {
+    document.documentElement.setAttribute('data-theme', 'light');
+    btn.textContent = 'LIGHT';
+  }
+  btn.addEventListener('click', () => {
+    const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+    document.documentElement.setAttribute('data-theme', isLight ? 'dark' : 'light');
+    localStorage.setItem(KEY, isLight ? 'dark' : 'light');
+    // Re-apply i18n to update theme button text
+    initSubpageI18n();
+  });
+
+  // Init i18n (also sets theme button text)
+  initSubpageI18n();
+</script>
+</body>
+</html>

@@ -1,0 +1,438 @@
+[
+  {
+    "name": "Caminhada",
+    "level": "transparente",
+    "entry": "closed",
+    "exit": "closed",
+    "beats": 4,
+    "phase_shift": 0,
+    "requires": [
+      "hips movement",
+      "roots basic",
+      "xique-xique"
+    ],
+    "notes": "Walking in closed embrace with musical intention."
+  },
+  {
+    "name": "Contact",
+    "level": "basic",
+    "entry": "closed",
+    "exit": "closed",
+    "beats": 2,
+    "phase_shift": 0,
+    "requires": [
+      "basic 1"
+    ],
+    "notes": "Establishing the closed embrace connection."
+  },
+  {
+    "name": "abertura",
+    "level": "basic",
+    "entry": "closed",
+    "exit": "open",
+    "beats": 4,
+    "phase_shift": 0,
+    "requires": [
+      "Contact"
+    ],
+    "notes": "Opens from closed embrace to open (two hands). Key transition."
+  },
+  {
+    "name": "abriu estranho 1",
+    "level": "transparente",
+    "entry": "open",
+    "exit": "open",
+    "beats": 4,
+    "phase_shift": 0,
+    "requires": [
+      "basic 2"
+    ],
+    "notes": "Strange opening 1. Foot pattern from pe descalco style."
+  },
+  {
+    "name": "avioncinho",
+    "level": "transparente",
+    "entry": "one-hand-L",
+    "exit": "one-hand-L",
+    "beats": 5,
+    "phase_shift": 1,
+    "requires": [
+      "troca de mano"
+    ],
+    "notes": "Airplane. 5-step figure — disrupts phrase alignment, can flip on1↔on3."
+  },
+  {
+    "name": "avioncinho (follower)",
+    "level": "transparente",
+    "entry": "one-hand-L",
+    "exit": "one-hand-L",
+    "beats": 5,
+    "phase_shift": 1,
+    "requires": [
+      "avioncinho"
+    ],
+    "notes": "Follower-led avioncinho variation."
+  },
+  {
+    "name": "balanco",
+    "level": "basic",
+    "entry": "closed",
+    "exit": "closed",
+    "beats": 2,
+    "phase_shift": 0,
+    "requires": [
+      "basic 1"
+    ],
+    "notes": "Balance / sway. Lateral weight shift in closed embrace."
+  },
+  {
+    "name": "basic 1",
+    "level": "basic",
+    "entry": "closed",
+    "exit": "closed",
+    "beats": 2,
+    "phase_shift": 0,
+    "requires": [],
+    "notes": "Foundational step. Closed embrace, weight transfer left-right."
+  },
+  {
+    "name": "basic 2",
+    "level": "basic",
+    "entry": "closed",
+    "exit": "closed",
+    "beats": 2,
+    "phase_shift": 0,
+    "requires": [
+      "basic 1"
+    ],
+    "notes": "Second basic step variation. Builds from basic 1."
+  },
+  {
+    "name": "chave cruzada",
+    "level": "azul",
+    "entry": "closed",
+    "exit": "closed",
+    "beats": 8,
+    "phase_shift": 0,
+    "requires": [
+      "chave de braco",
+      "costas com costas"
+    ],
+    "notes": "Complex figure combining arm lock with back-to-back. Lavaí forro school vocabulary."
+  },
+  {
+    "name": "chave de braco",
+    "level": "transparente",
+    "entry": "open",
+    "exit": "closed",
+    "beats": 5,
+    "phase_shift": 1,
+    "requires": [
+      "ciclo de transiciones",
+      "troca de mano"
+    ],
+    "notes": "Arm lock. 5-step figure — disrupts phrase, transitions open→closed."
+  },
+  {
+    "name": "chuveirinho",
+    "level": "transparente",
+    "entry": "open",
+    "exit": "open",
+    "beats": 4,
+    "phase_shift": 0,
+    "requires": [
+      "simple turn (follower)"
+    ],
+    "notes": "Shower spin. Both arms raised, follower spins. Manos alzadas."
+  },
+  {
+    "name": "ciclo de transiciones",
+    "level": "transparente",
+    "entry": "open",
+    "exit": "open",
+    "beats": 8,
+    "phase_shift": 0,
+    "requires": [
+      "simple turn (leader)",
+      "simple turn (follower)"
+    ],
+    "notes": "Full cycle of transitions through open positions."
+  },
+  {
+    "name": "cinco pisadas",
+    "level": "transparente",
+    "entry": "open",
+    "exit": "open",
+    "beats": 5,
+    "phase_shift": 1,
+    "requires": [
+      "abriu estranho 1"
+    ],
+    "notes": "Five steps. 5-step figure — disrupts phrase alignment."
+  },
+  {
+    "name": "costas com costas",
+    "level": "transparente",
+    "entry": "meio-costas",
+    "exit": "costas",
+    "beats": 4,
+    "phase_shift": 0,
+    "requires": [
+      "meio costa com costa"
+    ],
+    "notes": "Full back-to-back position."
+  },
+  {
+    "name": "dois pra aca dois pra la",
+    "level": "basic",
+    "entry": null,
+    "exit": null,
+    "beats": null,
+    "phase_shift": 0,
+    "requires": [
+      "basic 1"
+    ],
+    "notes": ""
+  },
+  {
+    "name": "enceradeira",
+    "level": "basic",
+    "entry": null,
+    "exit": null,
+    "beats": null,
+    "phase_shift": 0,
+    "requires": [],
+    "notes": ""
+  },
+  {
+    "name": "facáo",
+    "level": "basic",
+    "entry": "closed",
+    "exit": "closed",
+    "beats": 4,
+    "phase_shift": 0,
+    "requires": [
+      "basic 1",
+      "basic 2"
+    ],
+    "notes": "Leader steps forward-diagonal, creating a 'saber' shape."
+  },
+  {
+    "name": "giro (eje follower)",
+    "level": "transparente",
+    "entry": "closed",
+    "exit": "closed",
+    "beats": 4,
+    "phase_shift": 0,
+    "requires": [
+      "piao"
+    ],
+    "notes": "Turn on follower's axis. Follower pivots in place."
+  },
+  {
+    "name": "giro junto",
+    "level": "transparente",
+    "entry": "closed",
+    "exit": "closed",
+    "beats": 3,
+    "phase_shift": 1,
+    "requires": [
+      "piao"
+    ],
+    "notes": "Joint turn. Leader turns right-back in three steps — 3-step figure, disrupts phrase."
+  },
+  {
+    "name": "giro junto multiplo",
+    "level": "azul",
+    "entry": "closed",
+    "exit": "closed",
+    "beats": 8,
+    "phase_shift": 0,
+    "requires": [
+      "giro junto"
+    ],
+    "notes": "Multiple joint turns. Extended version of giro junto."
+  },
+  {
+    "name": "giros em linha",
+    "level": "transparente",
+    "entry": "open",
+    "exit": "open",
+    "beats": 8,
+    "phase_shift": 0,
+    "requires": [
+      "abriu estranho 1"
+    ],
+    "notes": "Turns in a line. Sequential turns from pe descalco vocabulary."
+  },
+  {
+    "name": "hips movement",
+    "level": "basic",
+    "entry": "closed",
+    "exit": "closed",
+    "beats": 2,
+    "phase_shift": 0,
+    "requires": [],
+    "notes": "Isolated hip exercise, often done with hands on wall."
+  },
+  {
+    "name": "magica",
+    "level": "transparente",
+    "entry": "one-hand-L",
+    "exit": "open",
+    "beats": 4,
+    "phase_shift": 0,
+    "requires": [
+      "troca de mano",
+      "chuveirinho"
+    ],
+    "notes": "Magic. Combines hand exchange with chuveirinho."
+  },
+  {
+    "name": "meio costa com costa",
+    "level": "transparente",
+    "entry": "open",
+    "exit": "meio-costas",
+    "beats": 4,
+    "phase_shift": 0,
+    "requires": [
+      "simple turn (leader)"
+    ],
+    "notes": "Half back-to-back. Follower turns to face away while leader stays."
+  },
+  {
+    "name": "panamericano",
+    "level": "azul",
+    "entry": "open",
+    "exit": "open",
+    "beats": 8,
+    "phase_shift": 0,
+    "requires": [
+      "cinco pisadas"
+    ],
+    "notes": "Pan-American. Uses two hands, built from cinco pisadas vocabulary."
+  },
+  {
+    "name": "paulista",
+    "level": "azul",
+    "entry": "closed",
+    "exit": "closed",
+    "beats": 8,
+    "phase_shift": 0,
+    "requires": [
+      "simple turn (follower)",
+      "piao"
+    ],
+    "notes": "São Paulo style figure. Complex 8-beat combination."
+  },
+  {
+    "name": "piao",
+    "level": "basic",
+    "entry": "closed",
+    "exit": "closed",
+    "beats": 4,
+    "phase_shift": 0,
+    "requires": [
+      "Contact",
+      "abertura"
+    ],
+    "notes": "Pivot/spin in closed embrace. Leader steps back, follower rotates."
+  },
+  {
+    "name": "piao invertido",
+    "level": "transparente",
+    "entry": "closed",
+    "exit": "closed",
+    "beats": 4,
+    "phase_shift": 0,
+    "requires": [
+      "piao",
+      "facáo"
+    ],
+    "notes": "Inverted pião. Reverse direction of the standard pivot."
+  },
+  {
+    "name": "roots basic",
+    "level": "basic",
+    "entry": "closed",
+    "exit": "closed",
+    "beats": 4,
+    "phase_shift": 0,
+    "requires": [
+      "basic 1",
+      "basic 2"
+    ],
+    "notes": "Roots-style basic with fuller body engagement."
+  },
+  {
+    "name": "simple turn (follower)",
+    "level": "basic",
+    "entry": "open",
+    "exit": "open",
+    "beats": 4,
+    "phase_shift": 0,
+    "requires": [
+      "abertura",
+      "basic 2"
+    ],
+    "notes": "Follower turns under raised arm. Two hands, one hand raised."
+  },
+  {
+    "name": "simple turn (leader)",
+    "level": "basic",
+    "entry": "open",
+    "exit": "open",
+    "beats": 4,
+    "phase_shift": 0,
+    "requires": [
+      "simple turn (follower)"
+    ],
+    "notes": "Leader turn, mirror of follower turn."
+  },
+  {
+    "name": "troca de mano",
+    "level": "transparente",
+    "entry": "one-hand-R",
+    "exit": "one-hand-L",
+    "beats": 4,
+    "phase_shift": 0,
+    "requires": [
+      "simple turn (leader)"
+    ],
+    "notes": "Hand exchange. Leader's right releases, left takes follower's right."
+  },
+  {
+    "name": "walkingmachine",
+    "level": "transparente",
+    "entry": "closed",
+    "exit": "closed",
+    "beats": 8,
+    "phase_shift": 0,
+    "requires": [
+      "chave de braco"
+    ],
+    "notes": "Walking machine. Sequential walking pattern after chave de braco."
+  },
+  {
+    "name": "xique-xique",
+    "level": "basic",
+    "entry": "closed",
+    "exit": "closed",
+    "beats": 2,
+    "phase_shift": 0,
+    "requires": [],
+    "notes": "Basic rhythmic step pattern."
+  },
+  {
+    "name": "xique-xique (transferencia de peso)",
+    "level": "basic",
+    "entry": "closed",
+    "exit": "closed",
+    "beats": 4,
+    "phase_shift": 0,
+    "requires": [
+      "xique-xique"
+    ],
+    "notes": "Xique-xique with deliberate weight transfer emphasis."
+  }
+]
